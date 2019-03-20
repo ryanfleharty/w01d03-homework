@@ -102,4 +102,54 @@ for (let i=0; i < turtleMembers.length; i++){
 //enter code here
 
 
+//Return of the Closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+
+// remove kristyns "left shoe" from the array, store it to a 
+// new variable kristynsShoe. use that variable to add the shoe to
+// thoms accessories array
+
+let kristynsShoe = kristynsCloset[0];
+//console.log(kristynsShoe);
+thomsCloset[2].push(kristynsShoe);
+//console.log(thomsCloset[2]);
+kristynsCloset.shift();
+//console.log(kristynsCloset);
+
+
+console.log(`Kristin will be wearing her smashing ${kristynsCloset[2]}, coupled
+with her ${kristynsCloset[3]} and ${kristynsCloset[4]}`);
+
+console.log(`Thom is sporting a ${thomsCloset[0][0]} with ${thomsCloset[1][0]} and ${thomsCloset[2][2]}`);
 
