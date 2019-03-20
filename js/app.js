@@ -47,3 +47,15 @@ for (let i = 0; i < 20; i++)
 		}
 	}
 }
+
+
+//=======FIZZ BUZZ=======
+
+//the fizz buzz exercise
+
+
+for (let i = 1; i <= 100; i++)
+{
+	console.log( ((!(!(i % 3) || !(i % 5)) && i) || "") + ((!(i % 3) && "Fizz") || "") + ((!(i % 5) && "Buzz") || "") );
+}
+
