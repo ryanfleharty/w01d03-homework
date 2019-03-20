@@ -85,5 +85,21 @@ const ryan = ["Ryan", 65, "Denver"];
   //console.log(jimHaff);
 
 
-  
+
+//Yell at the Ninja Turtles: 
+
+
+const turtleMembers = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let i=0; i < turtleMembers.length; i++){
+    let bigTurtle = turtleMembers[i].toUpperCase();
+    console.log(bigTurtle);
+};
+
+
+// Bonus: Modify the answer to have the letters alternate back and forth between upper and lowercase
+
+//enter code here
+
+
 
