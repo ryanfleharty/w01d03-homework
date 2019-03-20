@@ -43,3 +43,47 @@ for (let i=1; i<=100; i++){
     }
 };
 
+//Getting to Know You: Use the following arrays to answer the questions below (name, age, hometown)
+
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const rueben = ["Rueben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+
+
+//1. Remove Kenny from kenny array and replace with Gameboy
+  kenny.shift(); 
+  kenny.unshift("Gameboy");
+  //kenny.toString();
+  //console.log(kenny);
+
+//2. Increase jimClark birthday by 2 but do not hard code it
+  jimClark[1] = jimClark[1] + 2;
+  //jimClark.toString();
+  //console.log(jimClark);
+
+//3. Change ryan hometown to Gotham City
+  ryan[2] = "Gotham City";
+  //ryan.toString();
+  //console.log(ryan);
+
+//4. Remove Durham from rueben array and add Chicago
+  rueben.pop();
+  rueben.push("Chicago")
+  //rueben.toString();
+  //console.log(rueben);
+
+//5. Remove All cities from jimHaff, replace with any 3 cities
+  jimHaff.pop();
+  jimHaff.push("Denver", "Chicago", "LA");
+  //jimHaff.toString();
+  //console.log(jimHaff);
+//6. (bonus) remove the first of the 3 cities from jimHaff array
+  jimHaff.splice(2, 1);
+  //console.log(jimHaff);
+
+
+  
+
