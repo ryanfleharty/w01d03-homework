@@ -24,3 +24,26 @@ for (let i = 0; i <= 200; i = i + 2)
 {
 	console.log(i);
 }
+
+//=======EXCITED KITTEN=======
+
+//for loop which logs kitten message 20 times
+for (let i = 0; i < 20; i++)
+{
+	console.log("Love me, pet me! HSSSSSS!");
+	if (i % 2 == 0) //for every even index
+	{
+		switch (Math.floor(Math.random() * 3))
+		{
+			case 0:
+				console.log("...human...why you taking pictures of me?...");
+			break;
+			case 1:
+				console.log("...the catnip made me do it...");
+			break;
+			case 2:
+				console.log("...why does the red dot always get away...");
+			break;
+		}
+	}
+}
