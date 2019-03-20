@@ -121,16 +121,30 @@ const kristynsCloset = [
       "raybans"
     ]
   ];
-// Alien Attire
-  let kristynsShoe = kristynsCloset[0];
-  kristynsCloset.shift();
-  console.log(kristynsShoe);
+// // Alien Attire
+//   let kristynsShoe = kristynsCloset[0];
+//   kristynsCloset.shift();
+//   console.log(kristynsShoe);
 
-thomsCloset[2].push(kristynsShoe);
-console.table(thomsCloset);
+// thomsCloset[2].push(kristynsShoe);
+// console.table(thomsCloset);
 
-//Dress 'em Up
-console.table(kristynsCloset);
-console.log("Kristyn is wearing " + kristynsCloset[0] + ", " + kristynsCloset[2] + ", and " + kristynsCloset[3] + ".")
+// //Dress 'em Up
+// console.table(kristynsCloset);
+// console.log("Kristyn is wearing " + kristynsCloset[0] + ", " + kristynsCloset[2] + ", and " + kristynsCloset[3] + ".")
 
-console.log("Thom is wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][0] + ".")
+// console.log("Thom is wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][0] + ".")
+
+//Dirty Laundry
+for (i = 0; i < kristynsCloset.length; i++) {
+    console.log("WHIRR: Now washing " + kristynsCloset[i])
+}
+
+//Inventory
+let thomsPants = thomsCloset[0];
+let thomsShirts = thomsCloset[1];
+let thomsAcc = thomsCloset[2];
+
+console.log(thomsPants);
+console.log(thomsShirts);
+console.log(thomsAcc);
