@@ -124,6 +124,59 @@ for (let i = 0; i < turtlesArr.length; i++) {
   console.log(turtlesArr[i]);
 }
 
+// Return of the Closets
+// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
 
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Alien Attire
+// 1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+const kristynsShoe = kristynsCloset.slice(0, 1);
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset[2][3]);
+
+// Dress 'em Up
+//2. Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+const kristynsOutfit1 = [kristynsCloset[0], kristynsCloset[1], kristynsCloset[2]];
+const kristynsOutfit2 = [kristynsCloset[3], kristynsCloset[7], kristynsCloset[1]];
+const kristynsOutfit3 = [kristynsCloset[2], kristynsCloset[4], kristynsCloset[6]];
+console.table(kristynsOutfit1);
+console.table(kristynsOutfit2);
+console.table(kristynsOutfit3);
+
+const thomsOutfit1 = [thomsCloset[0][3], thomsCloset[1][1], thomsCloset[2][0]];
+const thomsOutfit2 = [thomsCloset[2][2], thomsCloset[2][1], thomsCloset[1][2]];
+const thomsOutfit3 = [thomsCloset[2][0], thomsCloset[0][2], thomsCloset[0][1]];
+console.table(thomsOutfit1);
+console.table(thomsOutfit2);
+console.table(thomsOutfit3);
 
