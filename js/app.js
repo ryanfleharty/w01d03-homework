@@ -47,3 +47,23 @@ for (let i = 0; i < 20; i++) {
     console.log(shuffle(catStrings)[0]);
   }
 }
+
+// Fizz Buzz
+// NOTE: THIS IS A CLASSIC RITE-OF-PASSAGE FOR JAVASCRIPT PROGRAMMERS, ESPECIALLY ONES AT GA
+// 1. Write a javascript application that logs all numbers from 1 - 100.
+// 2. If a number is divisible by 3 log "Fizz" instead of the number.
+// 3. If a number is divisible by 5 log "Buzz" instead of the number.
+// 4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+const max = 100;
+for (let i = 0; i < max; i += 1) {
+  if ((i % 3 === 0) && (i % 5 === 0)) {
+    result = 'fizzbuzz';
+  } else if (i % 3 === 0) {
+    result = 'fizz';
+  } else if (i % 5 === 0) {
+    result = 'buzz';
+  } else {
+    result = i;
+  }
+  console.log(result);
+}
