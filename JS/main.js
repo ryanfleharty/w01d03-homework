@@ -66,4 +66,57 @@ console.log(jim[2])
 */
 
 //1. Yell at the Ninja Turtles 
-var ninjaTurtle = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+/*var ninjaTurtle = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+
+//2. 
+console.log(ninjaTurtle.map(a => a.toUpperCase()));*/
+
+
+//1. Return of Closets 
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  //.1 Alien Attire
+  /*var kristynsShoe = kristynsCloset[0];
+  thomsCloset[2].push(kristynsShoe);
+  thomsCloset.shift();
+  console.log(thomsCloset) */
+//.1 Dress'em Up
+
+kristynsCloset.forEach(function(element) {
+    var x = Math.floor(Math.random() * 9);
+    console.log(kristynsCloset[x])
+})
+
+thomsCloset.forEach(function(element) {
+    var x = Math.floor(Math.random() * 9);
+    console.log(thomsCloset[x])
+})
