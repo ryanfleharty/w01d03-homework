@@ -129,3 +129,12 @@ console.log("Thom's first outfit is: " + thomsCloset[0][0] + ", " + thomsCloset[
 console.log("Thom's second outfit is: " + thomsCloset[0][1] + ", " + thomsCloset[1][2] + ", and " + thomsCloset[2][2]);
 console.log("Let it be noted that Thom has very bad fashion sense.");
 
+for (let i = 0; i <= 5; i++)
+{
+	console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+for (let i = 0; i <= 2; i++)
+{
+	console.log(thomsCloset[i]);
+}
