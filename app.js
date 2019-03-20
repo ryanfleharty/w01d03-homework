@@ -31,20 +31,54 @@ console.log("Up and running!");
 // }
 
 //Fizz Buzz 1.
-for (i = 1; i < 101; i++) {
-    if (i % 3 == 0) {
-        console.log("Fizz");
-    }
+// for (i = 1; i < 101; i++) {
+//     if (i % 3 == 0) {
+//         console.log("Fizz");
+//     }
 
-   else if (i % 5 == 0) {
-        console.log("Buzz")
-    }
+//    else if (i % 5 == 0) {
+//         console.log("Buzz")
+//     }
     
-    if (i % 3 == 0 && i % 5 == 0) {
-        console.log("FizzBuz")
-    }
+//     if (i % 3 == 0 && i % 5 == 0) {
+//         console.log("FizzBuz")
+//     }
 
-    else if (i % 3 != 0 && i % 5 != 0) {
-        console.log(i)
-    }
-   } 
+//     else if (i % 3 != 0 && i % 5 != 0) {
+//         console.log(i)
+//     }
+//    } 
+
+//Getting to Know You
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+//1.
+shahzad.shift();
+shahzad.unshift("Gameboy");
+console.log(shahzad);
+
+//2.
+daniel[1]++
+console.log(daniel);
+
+//3.
+ryan.pop();
+ryan.push("Gotham City");
+console.log(ryan);
+
+//4.
+reuben.pop();
+reuben.push("Chicago");
+console.log(reuben);
+
+//5.
+jim.splice(2, 1, "Los Angeles", "Omaha", "Mexico City");
+
+
+//6.
+jim.splice(2, 1)
+console.log(jim);
