@@ -29,3 +29,17 @@ for (let i=1; i<=20; i++){
     }
 };
 
+//Fizz Buzz: write a JS application that logs numbers 1-100, div by 3 fizz, div by 5 buzz, div by 3 & 5 fizzbuzz
+
+for (let i=1; i<=100; i++){
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log("FizzBuzz")
+    } else if (i % 5 === 0){
+        console.log("Buzz")
+    } else if (i % 3 === 0){
+        console.log("Fizz")
+    } else {
+        console.log(i)
+    }
+};
+
