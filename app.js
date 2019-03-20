@@ -12,20 +12,39 @@ console.log("Up and running!");
 //     console.log(i)
 // }
 
-//Excited Kitten 1.
-const kitten = ["...human...why you taking pictures of me?...", 
-"...the catnip made me do it...", 
-"...why does the red dot always get away..." ];
+// //Excited Kitten 1.
+// const kitten = ["...human...why you taking pictures of me?...", 
+// "...the catnip made me do it...", 
+// "...why does the red dot always get away..." ];
+
+// // for (i = 0; i < 20; i++) {
+// //     console.log("Love me, pet me! HSSSSSS!")
+
+// // }
 
 // for (i = 0; i < 20; i++) {
-//     console.log("Love me, pet me! HSSSSSS!")
+//     function kittenMix (i) {
+//         return Math.floor(Math.random() * Math.floor(kitten[i]));
+//       }
+//       console.log(kittenMix(i))
 
 // }
 
-for (i = 0; i < 20; i++) {
-    function kittenMix (i) {
-        return Math.floor(Math.random() * Math.floor(kitten[i]));
-      }
-      console.log(kittenMix(i))
+//Fizz Buzz 1.
+for (i = 1; i < 101; i++) {
+    if (i % 3 == 0) {
+        console.log("Fizz");
+    }
 
-}
+   else if (i % 5 == 0) {
+        console.log("Buzz")
+    }
+    
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuz")
+    }
+
+    else if (i % 3 != 0 && i % 5 != 0) {
+        console.log(i)
+    }
+   } 
