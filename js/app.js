@@ -16,3 +16,11 @@ for (let i = 1; i <= 20; i++)
 {
 	console.log(i);
 }
+
+//=======GET EVEN=======
+
+//for loop which logs only even numbers between 0 and 200
+for (let i = 0; i <= 200; i = i + 2)
+{
+	console.log(i);
+}
