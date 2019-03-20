@@ -11,3 +11,45 @@ for (let i = 0; i <= 200; i++) {
 		console.log(i);
 	}
 }
+//Excited Kitten
+
+const petThoughts1 = "Love me, pet me, HSSSSSSSS!";
+const petThoughts2 = ["...human, why are you taking pictures of me?", "...the catnip made me do it.", "...why does the red dot always get away?"];
+
+for (let i = 0; i < 20; i++) {
+	if (i % 2 === 0) {
+		const rand = petThoughts2[Math.floor(Math.random() * petThoughts2.length)];
+	console.log(rand);
+	} 
+console.log(petThoughts1);
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
