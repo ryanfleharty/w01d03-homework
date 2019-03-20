@@ -74,3 +74,15 @@ ryan[2] = "Gotham City";
 reuben.pop(); reuben.push("Chicago");
 jim.pop(); jim.push("Boise", "Boston", "London");
 jim.splice(2, 1);
+
+
+
+//=======YELL AT THE NINJA TURTLES=======
+
+const turtles=["Donatello", "Leonardo", "Raphael", "Michelangelo"];
+
+for (let i = 0; i <= 3; i++)
+{
+	console.log(turtles[i].toUpperCase());
+}
+
