@@ -8,7 +8,62 @@
 //console.log(i)
 
 //1. Excited Kitten 
-for (var i = 0; i < 20; i++)
-console.log('Love me, pet me! HSSSSSS')
+//for (var i = 0; i < 20; i++)
+//console.log('Love me, pet me! HSSSSSS')
 
+//2. 
+/*const cat = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 
+for (var i = 0; i < 20; i+=2) {
+var x = Math.floor(Math.random() * 3);
+console.log(cat[x]) */
+//}
+ //1. Fizzbuzz
+ //for (var i = 1; i < 100; i++) {
+//console.log(i) 
+//}
+//2. 
+/*for (var i = 1; i < 100; i+=3) {
+    if ( i % 3 === "Fizz");
+    console.log("Fizz") 
+}*/
+//3.
+/*for (var i = 1; i < 100; i+=5) {
+    if ( i % 5 === "Buzz");
+    console.log("Buzz") 
+} */
+//4. 
+/*for (var i = 1; i < 100; i++) {
+    if ( i % 3 && 1 % 5 === "FizzBuzz");
+    console.log("FizzBuzz") 
+}*/
+
+//1. Getting to Know you 
+/*const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+//1. 
+shahzad[0] = 'Gameboy';
+console.log(shahzad[0])
+ 
+//2.
+daniel[1] += 1; 
+console.log(daniel[1]);
+
+//3. 
+ryan[2] = "Batman";
+console.log(ryan[2])
+
+//4. 
+reuben[2] = "Chicago";
+console.log(reuben[2])
+
+//5. 
+console.log(jim[2])
+*/
+
+//1. Yell at the Ninja Turtles 
+var ninjaTurtle = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
