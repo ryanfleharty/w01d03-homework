@@ -138,3 +138,16 @@ for (let i = 0; i <= 2; i++)
 {
 	console.log(thomsCloset[i]);
 }
+
+//=======MULTIPLES OF 3 AND 5=======
+
+let total = 0; //This will hold the total sum
+
+for (let i = 0; i < 1000; i++)
+{
+	if (!(i % 3) || !(i % 5)) //if it's a multiple of 3 or 5
+	{
+		total = total + i; //add it to the total sum
+	}
+}
+console.log("The sum of all multiples of 3 or 5 below 1000 is: " + total);
