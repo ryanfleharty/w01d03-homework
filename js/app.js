@@ -180,3 +180,33 @@ console.table(thomsOutfit1);
 console.table(thomsOutfit2);
 console.table(thomsOutfit3);
 
+
+// Dirty Laundry
+// Continue looking at the closet arrays:
+
+// 1.Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+for (let i = 0; i < kristynsCloset.length; i++) {
+  console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+// Inventory
+//2. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+const thomsClosetShirts = thomsCloset[0];
+const thomsClosetPants = thomsCloset[1];
+const thomsClosetAccessories = thomsCloset[2];
+console.table(thomsClosetShirts);
+console.table(thomsClosetPants);
+console.table(thomsClosetAccessories);
+
+// Multiples of 3 and 5
+// Yes, you might have tackled this earlier, but try it again (don't look back at your other code 👀)
+
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+// Find the sum of all the multiples of 3 or 5 below 1000.
+
+
+
+
+
+
