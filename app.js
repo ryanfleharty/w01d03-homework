@@ -18,15 +18,17 @@ console.log("Up and running!");
 // "...why does the red dot always get away..." ];
 
 // // for (i = 0; i < 20; i++) {
-// //     console.log("Love me, pet me! HSSSSSS!")
+// //      console.log("Love me, pet me! HSSSSSS!")
 
 // // }
-
+// let rand = 0;
 // for (i = 0; i < 20; i++) {
-//     function kittenMix (i) {
-//         return Math.floor(Math.random() * Math.floor(kitten[i]));
+//     function kittenMix(kitten) {
+//         rand = Math.floor(Math.random() * kitten.length);
+//         return kitten[rand];
+
 //       }
-//       console.log(kittenMix(i))
+//       console.log(kittenMix(kitten))
 
 // }
 
@@ -84,7 +86,51 @@ console.log("Up and running!");
 // console.log(jim);
 
 // Yell at the Ninja Turtles
-const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
-for (let i = 0; i < turtles.length; i++) {
-    console.log(turtles[i].toUpperCase())
-}
+// const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// for (let i = 0; i < turtles.length; i++) {
+//     console.log(turtles[i].toUpperCase())
+// }
+
+//Return of the Closets
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+// Alien Attire
+  let kristynsShoe = kristynsCloset[0];
+  kristynsCloset.shift();
+  console.log(kristynsShoe);
+
+thomsCloset[2].push(kristynsShoe);
+console.table(thomsCloset);
+
+//Dress 'em Up
+console.table(kristynsCloset);
+console.log("Kristyn is wearing " + kristynsCloset[0] + ", " + kristynsCloset[2] + ", and " + kristynsCloset[3] + ".")
+
+console.log("Thom is wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][0] + ".")
