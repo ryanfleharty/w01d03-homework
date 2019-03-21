@@ -134,4 +134,20 @@ console.log(outfitTwo);
 let outfitThree = kristynsCloset[4] + ", " + thomsCloset[1][0] + ", & " + thomsCloset[0][3];
 console.log(outfitThree);
 
+//Dirty Laundry
+
+for(let i = 0; i < kristynsCloset.length; i++){
+	console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+//Inventory
+
+console.log(thomsCloset);
+
+
+
+
+
+
+
 
