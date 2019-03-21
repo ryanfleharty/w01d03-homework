@@ -91,36 +91,36 @@ console.log("Up and running!");
 //     console.log(turtles[i].toUpperCase())
 // }
 
-//Return of the Closets
-const kristynsCloset = [
-    "left shoe",
-    "cowboy boots",
-    "right sock",
-    "GA hoodie",
-    "green pants",
-    "yellow knit hat",
-    "marshmallow peeps"
-  ];
+// //Return of the Closets
+// const kristynsCloset = [
+//     "left shoe",
+//     "cowboy boots",
+//     "right sock",
+//     "GA hoodie",
+//     "green pants",
+//     "yellow knit hat",
+//     "marshmallow peeps"
+//   ];
   
-  const thomsCloset = [
-    [
-      // These are Thom's shirts
-      "grey button-up",
-      "dark grey button-up",
-      "light blue button-up",
-      "blue button-up",
-    ],[
-      // These are Thom's pants
-      "grey jeans",
-      "jeans",
-      "PJs"
-    ],[
-      // Thom's accessories
-      "wool mittens",
-      "wool scarf",
-      "raybans"
-    ]
-  ];
+//   const thomsCloset = [
+//     [
+//       // These are Thom's shirts
+//       "grey button-up",
+//       "dark grey button-up",
+//       "light blue button-up",
+//       "blue button-up",
+//     ],[
+//       // These are Thom's pants
+//       "grey jeans",
+//       "jeans",
+//       "PJs"
+//     ],[
+//       // Thom's accessories
+//       "wool mittens",
+//       "wool scarf",
+//       "raybans"
+//     ]
+//  ];
 // // Alien Attire
 //   let kristynsShoe = kristynsCloset[0];
 //   kristynsCloset.shift();
@@ -136,15 +136,22 @@ const kristynsCloset = [
 // console.log("Thom is wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][1] + ", and " + thomsCloset[2][0] + ".")
 
 //Dirty Laundry
-for (i = 0; i < kristynsCloset.length; i++) {
-    console.log("WHIRR: Now washing " + kristynsCloset[i])
+// for (i = 0; i < kristynsCloset.length; i++) {
+//     console.log("WHIRR: Now washing " + kristynsCloset[i])
+// }
+
+// //Inventory
+// let thomsPants = thomsCloset[0];
+// let thomsShirts = thomsCloset[1];
+// let thomsAcc = thomsCloset[2];
+
+// console.log(thomsPants);
+// console.log(thomsShirts);
+// console.log(thomsAcc);
+let sum = 0;
+for (i = 0; i < 1000; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+        sum += i;
+    }
 }
-
-//Inventory
-let thomsPants = thomsCloset[0];
-let thomsShirts = thomsCloset[1];
-let thomsAcc = thomsCloset[2];
-
-console.log(thomsPants);
-console.log(thomsShirts);
-console.log(thomsAcc);
+console.log(sum);
