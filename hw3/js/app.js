@@ -124,3 +124,12 @@ for(let i = 0; i < kristynsCloset.length; i++){
 console.log(thomsCloset[0]);
 console.log(thomsCloset[1]);
 console.log(thomsCloset[2]);
+
+//multiples of 3 or 5
+for (let i = 0; i < 1000; i++){
+  if(i % 3 == 0){
+    console.log(i);
+  } else if (i % 5 == 0) {
+    console.log(i);
+  }
+}
