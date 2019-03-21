@@ -65,7 +65,66 @@ Yell at the Ninja Turtles
 Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 Use a for loop to call .toUpperCase() on each of them and print out the result.
 Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
-*/
+
 const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 for (let i = 0;i<turtles.length;i++){
  console.log(turtles[i].toUpperCase())}
+*/
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  /*Alien Attire
+Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! 
+Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. 
+Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+*/
+const kristynsShoe = kristynsCloset.shift()
+thomsCloset[2][3]=kristynsShoe;
+/*
+Dress 'em Up
+Modify your code to put together 3 separate outfits for Kristyn and Thom. 
+Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+*/
+console.log("Kristyn will be wearing "+kristynsCloset[4]+" and "+kristynsCloset[1]+" and "+kristynsCloset[3]);
+console.log("Thom will wear a "+thomsCloset[0][1]+" and "+thomsCloset[1][0]+" with a "+thomsCloset[2][1]);
+
+/*
+Dirty Laundry
+Continue looking at the closet arrays:
+
+Time to do laundry - loop through Kristyn's closet and 
+log the sentence "WHIRR: Now washing (item)" for each item in the array.
+*/
+
+
+/*
+Inventory
+Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+*/
