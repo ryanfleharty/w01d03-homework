@@ -166,19 +166,30 @@ thomsCloset[2].unshift(kristynsShoe);
     console.log(`Thom outfit for today: My shirt will be ${thomsCloset[0][1]}, my pants will be ${thomsCloset[1][2]}, and my accessorie will be ${thomsCloset[2][1]}.`);
 
 
-// <hr>
-// &#x1F534; The commit message should read: <br>
-// "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
-// <hr>
-
 // ### Dirty Laundry
 // Continue looking at the closet arrays:
 // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
-
+           ''' NO TIME NEED SLEEP'''
 // ### Inventory
 // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
-
+            ''' NO TIME NEED SLEEP'''
 // <hr>
 // &#x1F534; The commit message should read: <br>
 // "Commit 8 - I loops through their closets".
 // <hr></hr>
+// ## Multiples of 3 and 5
+              ''' NO TIME NEED SLEEP'''
+// _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
+
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+// Find the **sum** of all the multiples of 3 or 5 below 1000.
+
+// :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+
+// >Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
+
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 9 - Project Euler Problem 1 answered"
+// <hr>
