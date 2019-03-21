@@ -73,9 +73,86 @@ for (let i = 0; i < tmnt.length; i++) {
 }
 console.log(tmnt);
 
+//Return of the Closets
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+//1.
+//const kristynsShoe = kristynsCloset[0];
+thomsCloset[2].push(kristynsCloset.splice(0, 1)[0]);
+console.log(kristynsCloset);
+//console.log(kristynsShoe);
+console.log(thomsCloset[2]);
 
+//2. 
+const kristynsOutfit = [
+[
+  "cowboy boots",
+  "right sock",
+  ],[
+  "GA hoodie",
+  "green pants",
+  ],[
+  "yellow knit hat",
+  "marshmallow peeps"
+  ]
+];
+const thomsOutfit = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+    "left shoe"
+  ]
+];
+thomsOutfit[2].push(kristynsOutfit.pop(2, 1)[0]);
+thomsOutfit[2].splice(3, 1);
+//kristynsOutfit[2].push(thomsOutfit[1].splice(1, 1)[0]);
+kristynsOutfit[1].push(thomsOutfit[0].splice(3, 1)[0]);
+kristynsOutfit[0].push(thomsOutfit[0].splice(1, 1)[0]);
+kristynsOutfit[0].push(thomsOutfit[1].splice(0, 1)[0]);
+kristynsOutfit[0].splice(1, 1)[0];
 
-
+console.log("One of the outfits includes " + thomsOutfit[2] +".");
+console.log("One of the outfits includes " + kristynsOutfit[1]);
+console.log("One of the outfits includes " + kristynsOutfit[0]);
 
 
 
