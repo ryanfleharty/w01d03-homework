@@ -91,7 +91,67 @@ console.log(jim);
 **/
 
 //Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+/**
 let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (var i = 0; i < ninjaTurtles.length; i++) {
   console.log(ninjaTurtles[i].toUpperCase());
 }
+**/
+
+//Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+//Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+let kristynsShoe = kristynsCloset.slice(0,1);
+console.log(kristynsCloset);
+thomsCloset[2].push("left shoe");
+console.log(thomsCloset[2]);
+
+//Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+let newOutfit1 = kristynsCloset.slice(0,3);
+console.log(newOutfit1);
+let newOutif2 = kristynsCloset.slice(2,5);
+console.log(newOutif2);
+let newOutfit3 = kristynsCloset.slice(4,6 + 1);
+console.log(newOutfit3);
+
+let thomsMessyCloset = [].concat.apply([], thomsCloset);
+console.log(thomsMessyCloset);
+
+let newOutfit4 = thomsMessyCloset.slice(0,3);
+console.log(newOutfit4);
+let newOutif5 = thomsMessyCloset.slice(2,5);
+console.log(newOutif5);
+let newOutfit6 = thomsMessyCloset.slice(4,6 + 1);
+console.log(newOutfit6);
