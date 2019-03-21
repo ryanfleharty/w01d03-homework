@@ -95,3 +95,38 @@ for (let i = 0; i <= 100; i++){
 
 
 
+//## YELL AT NINJA TURTLES
+//1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+let turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// 2. Use a `for loop` to call `.toUpperCase()` on each of them and print out the result.
+
+var caps;
+
+for (let i = 0; i <= turtles.length; i++) {
+    function (turtles){
+        let tCaps = turtles[i].toUpperCase();}
+    console.log(tCaps);
+};
+
+caps ();
+
+
+// for(let i = 0; i < 20; i++){
+//     const random = Math.floor(Math.random() * max); 
+//     console.log("Love me, pet me! HSSSSSS!");
+//     if (i % 2 == 0){
+//         console.log(catWords[random]);
+//     }
+// };
+
+
+
+// 3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 6 - Yell at the Ninja Turtles answered"
+// <hr></hr>
+
