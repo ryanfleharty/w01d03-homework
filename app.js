@@ -64,7 +64,14 @@ console.log(jim);
 jim.splice(2, 1);
 console.log(jim);
 
-
+//Yell at the Ninja Turtles
+//1.
+const tmnt = ["Donatello", "Michaelangelo", "Leonardo", "Raphael"];
+//2.
+for (let i = 0; i < tmnt.length; i++) {
+	tmnt[i] = tmnt[i].toUpperCase();
+}
+console.log(tmnt);
 
 
 
