@@ -23,3 +23,19 @@ for(let i = 1; i <=20; i++){
         }
   }
 }
+//fizz buzz
+for(let i = 1; i <= 100; i++){
+  console.log(i);
+    if(i % 3 == 0){
+      let f = "Fizz"
+      console.log(f);
+    }
+    if(i % 5 == 0){
+      let b = "Buzz"
+      console.log(b);
+    }
+    if(i % 3 && i % 5 == 0){
+      let fb = "FizzBuzz"
+      console.log(fb);
+    }
+}
