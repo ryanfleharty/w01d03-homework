@@ -98,30 +98,15 @@ for (let i = 0; i <= 100; i++){
 //## YELL AT NINJA TURTLES
 //1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 
-let turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 // 2. Use a `for loop` to call `.toUpperCase()` on each of them and print out the result.
 
-var caps;
+// var caps;
 
-for (let i = 0; i <= turtles.length; i++) {
-    function (turtles){
-        let tCaps = turtles[i].toUpperCase();}
-    console.log(tCaps);
-};
-
-caps ();
-
-
-// for(let i = 0; i < 20; i++){
-//     const random = Math.floor(Math.random() * max); 
-//     console.log("Love me, pet me! HSSSSSS!");
-//     if (i % 2 == 0){
-//         console.log(catWords[random]);
-//     }
-// };
-
-
+for (let i = 0; i < turtles.length; i++) {
+    console.log(turtles[i].toUpperCase());
+    }             
 
 // 3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 
@@ -130,3 +115,70 @@ caps ();
 // "Commit 6 - Yell at the Ninja Turtles answered"
 // <hr></hr>
 
+// ##RETURN OF THE CLOSETS
+
+// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// ### Alien Attire
+// 1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable `kristynsShoe`. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+kristynsCloset.shift();
+let kristynsShoe = "left shoe";
+thomsCloset[2].unshift(kristynsShoe);
+
+
+
+// ### Dress 'em Up
+// 1. Modify your code to put together **3 separate outfits** for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+    console.log(`Kris out for today: My shirt will be ${kristynsCloset[0]}, my pants will be ${kristynsCloset[1]}, and my shirt will be ${kristynsCloset[2]}`);
+    console.log(`Thom outfit for today: My shirt will be ${thomsCloset[0][1]}, my pants will be ${thomsCloset[1][2]}, and my accessorie will be ${thomsCloset[2][1]}.`);
+
+
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
+// <hr>
+
+// ### Dirty Laundry
+// Continue looking at the closet arrays:
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+// ### Inventory
+// 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 8 - I loops through their closets".
+// <hr></hr>
