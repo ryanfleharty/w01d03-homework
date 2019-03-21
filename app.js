@@ -163,6 +163,18 @@ for (let i = 0; i < thomsCloset.length; i++) {
 console.log(thomsCloset);
 };
 
+//Multiples of 3 and 5
+
+	for (let i = 0; i < 1000; i++) {
+	if ((i % 3 === 0) || (i % 5 ===0)) {
+			//below doesn't work but can't find any solutions that don't include people saying use Math.sum(), which the console tells me isn't a function.
+			console.log(i);
+		}
+	}
+	
+
+
+
 
 
 
