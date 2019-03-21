@@ -18,6 +18,7 @@ for(i = 0; i <= 200; i+=2) {
 
 //Math.round(Math.random() * 21) will get me 1 randomly generated number between 0 and 20 rounded to the nearest whole number.
 
+/**
 let excitedCat = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]; {
 for(i = 0; i <= 20; i++) {
   if(excitedCat[i] % 2 === 0) {
@@ -28,6 +29,20 @@ for(i = 0; i <= 20; i++) {
 }
 }
 }
+**/
 
 //Pseudocode: I want to know when an even number is generated, I want to generate a random number at that point, I want the random number to become the index number, and the console to log the phrase
 //For every even number in your loop, log "...why does the red dot always get away..." at random.
+
+//Fizz Buzz (Task 4)
+for(i = 1; i <= 100; i++) {
+  if(i % 15 === 0) {
+      console.log("FizzBuzz");
+    } else if(i % 3 === 0) {
+    console.log("Fizz");
+  } else if(i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+        console.log(i);
+      }
+    }
