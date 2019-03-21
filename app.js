@@ -49,3 +49,34 @@ for (var i=1; i < 101; i++){
   else console.log(i);
 }
 
+//Getting to know you
+// Use the following arrays to answer the questions below (name, age, hometown):
+
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+
+//1
+shahzad.splice(0,1, "Gameboy");
+console.log(shahzad);
+
+//2 
+console.log (["Daniel", 186, "Dallas"].map(function (age) {
+return age + 1;
+}));
+
+//3
+ryan.splice(2,1, "Gotham City");
+console.log(ryan);
+
+//4 
+reuben.splice(2,1, "Chicago");
+console.log(reuben);
+
+//5 /// could not verify if correct
+jim.splice (2,3, "Portland", "Boston", "Sacramento");
+
+
