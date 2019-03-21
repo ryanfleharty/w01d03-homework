@@ -78,3 +78,49 @@ console.log(jim);
       console.log(name);
   }
 // Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+
+//return of the closets
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+//alien attire
+  let kristynsShoe = kristynsCloset.shift()
+  thomsCloset[2].push(kristynsShoe)
+  console.log(thomsCloset);
+//dress 'em up
+
+//dirty laundry
+for(let i = 0; i < kristynsCloset.length; i++){
+  console.log(`WHIPP: Now Washing ${kristynsCloset[i]} `);
+}
+//inventory
+console.log(thomsCloset[0]);
+console.log(thomsCloset[1]);
+console.log(thomsCloset[2]);
