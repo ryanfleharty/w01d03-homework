@@ -149,13 +149,19 @@ kristynsOutfit[1].push(thomsOutfit[0].splice(3, 1)[0]);
 kristynsOutfit[0].push(thomsOutfit[0].splice(1, 1)[0]);
 kristynsOutfit[0].push(thomsOutfit[1].splice(0, 1)[0]);
 kristynsOutfit[0].splice(1, 1)[0];
-
 console.log("One of the outfits includes " + thomsOutfit[2] +".");
 console.log("One of the outfits includes " + kristynsOutfit[1]);
 console.log("One of the outfits includes " + kristynsOutfit[0]);
 
-
-
+//Dirty Laundry
+//1.
+for (let i = 0; i < kristynsCloset.length; i++) {
+console.log("WHIRR: Now washing " + kristynsCloset[i]);
+};
+//2.
+for (let i = 0; i < thomsCloset.length; i++) {
+console.log(thomsCloset);
+};
 
 
 
