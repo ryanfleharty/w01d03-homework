@@ -68,3 +68,13 @@ console.log(jim);
 // Bonus: Whoops! Jim is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim is now, remove it from the array using .splice()
 jim.splice(2,2)
 console.log(jim);
+
+//yell at the ninja turtles
+// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+  let ninjas = ['Donatello','Leonardo','Raphael','Michaelangelo']
+// Use a for loop to call .toUpperCase() on each of them and print out the result.
+  for(let i = 0; i < ninjas.length; i++){
+      let name = ninjas[i].toUpperCase()
+      console.log(name);
+  }
+// Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
