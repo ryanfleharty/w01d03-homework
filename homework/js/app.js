@@ -41,3 +41,42 @@ for(let i = 1; i <=100; i++){
 	}
 }
 
+//Getting to Know You
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+//1.
+shahzad.shift();
+console.log(shahzad);
+shahzad.unshift("Gameboy");
+console.log(shahzad);
+
+//2.
+daniel[1] = daniel[1] + 1;
+console.log(daniel);
+
+//3.
+ryan.pop();
+console.log(ryan);
+
+ryan.push("Gotham City");
+console.log(ryan);
+
+//4.
+reuben.pop();
+console.log(reuben);
+
+reuben.push("Chicago");
+console.log(reuben);
+
+//5.
+jim.splice(2, 1, "Sydney", "London", "Brisbane");
+console.log(jim);
+
+//6.
+jim.splice(2,1);
+console.log(jim);
+
