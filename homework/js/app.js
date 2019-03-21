@@ -80,3 +80,11 @@ console.log(jim);
 jim.splice(2,1);
 console.log(jim);
 
+//Yell at the Ninja Turtles
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for(let i = 0; i < ninjaTurtles.length; i++){
+	console.log(ninjaTurtles[i].toUpperCase());
+}
+
+
+
