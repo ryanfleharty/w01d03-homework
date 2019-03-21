@@ -98,14 +98,15 @@ kristynsCloset.splice(0,1, "Chicago");
 console.log(reuben);
 
 
+
+//
+// Dirty Laundry
+
+
 //Multiples of 3 and 5
 const ans [];
 const j = 0;
 for (let i = 1; i < 1000; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
-        ans[j] = i;
-        sum += i;
-    }
+  console.log(sum +=i);
 }
-
-// Dirty Laundry
