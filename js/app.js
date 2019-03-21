@@ -49,6 +49,7 @@ for(i = 1; i <= 100; i++) {
     }
 **/
 
+/**
 //Getting to Know You
 const shahzad = ["Shahzad", 1000, "Austin"];
 const jim = ["Jim", 16, "All cities"];
@@ -87,3 +88,10 @@ console.log(jim);
 //Whoops! Jim is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim is now, remove it from the array using .splice()
 jim.splice(2,1);
 console.log(jim);
+**/
+
+//Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (var i = 0; i < ninjaTurtles.length; i++) {
+  console.log(ninjaTurtles[i].toUpperCase());
+}
