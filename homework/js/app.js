@@ -144,7 +144,17 @@ for(let i = 0; i < kristynsCloset.length; i++){
 
 console.log(thomsCloset);
 
+//Multiples of 3 & 5
 
+
+let totalNumber = 0;
+
+for(let i = 1; i <= 1000; i++){
+	if((i % 3 === 0) || (i % 5 === 0)){
+		totalNumber += i;
+	}
+}
+console.log(totalNumber);
 
 
 
