@@ -153,3 +153,23 @@ with her ${kristynsCloset[3]} and ${kristynsCloset[4]}`);
 
 console.log(`Thom is sporting a ${thomsCloset[0][0]} with ${thomsCloset[1][0]} and ${thomsCloset[2][2]}`);
 
+// Part 2 DIRTY LAUNDRY
+
+//loop through kristyn's closet and log "WHIRR: Now washing (item)"
+// for each item
+
+for (i = 0; i < kristynsCloset.length; i++){
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+};
+
+//inventory on Thom's closet: using bracket notation, log the arrays,
+//not the elements in the arrays, for thom's shirts, pants, and access...
+
+for (i = 0; i < thomsCloset.length; i++){
+    console.log(thomsCloset[i])
+};
+
+
+
+
+
