@@ -62,15 +62,92 @@ console.log(people);
 var reptiles = ["Donatello","Leonardo","Raphael","Michaelangelo"]
 
 //2
-for (i = 0; i < reptiles.length; i++) {
+for (let i = 0; i < reptiles.length; i++) {
   reptiles[i].toUpperCase;
   console.log(reptiles[i]);
 }
 
 //3
-for (i = 0; i < reptiles.length; i++) {
+for (let i = 0; i < reptiles.length; i++) {
   console.log(reptiles[i].toUpperCase());
   console.log(reptiles[i].toLowerCase());
 }
 
 // RETURN OF CLOSETS
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+
+//ALIEN ATTIRE
+var kristynsShoe = kristynsCloset[0];
+thomsCloset[2].push(kristynsShoe);
+kristynsCloset.splice(0,1);
+
+//DRESS 'EM UP
+var Thom = [];
+const dressThom = function() {
+  for (let i = 0; i < thomsCloset.length; i++) {
+    Thom.push(thomsCloset[i][Math.floor(Math.random() * 4)])
+  }
+}
+dressThom();
+console.log(Thom);
+//// TOM DOESN'T ALWAY NEED TO WEAR PANTS...
+var kristyn = [];
+const dressKristyn = function() {
+  for (i = 0; i < 3; i++) {
+    kristyn.push(kristynsCloset[i][Math.floor(Math.random() * 7)])
+  }
+}
+dressThom();
+console.log(Thom);
+
+// DIRTY LAUNDRY
+const laundry = function(array){
+  array.forEach(garment => console.log(`WHIRR: Now washing ${garment}`))
+}
+laundry(kristynsCloset);
+
+//Inventory
+const inventory = function(array){
+  array.forEach(drawer => console.log(drawer))
+}
+inventory(thomsCloset);
+
+//Project Euler Problem One
+let sum = 0;
+for (let i = 3; i <= 1000; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {
+    sum += i;
+  }
+}
+console.log(sum);
