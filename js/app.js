@@ -39,5 +39,29 @@ for(let i = 0; i < 20; i++){
 
 
 
+//FIZZ BUZZ
+/*1. Write a javascript application that logs all numbers from 1 - 100.
+
+2. If a number is divisible by 3 log "Fizz" instead of the number.
+
+3. If a number is divisible by 5 log "Buzz" instead of the number.
+
+4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.*/
+
+for (let i = 0; i <= 100; i++){
+    if  (i % 3 && i % 5 === 0){    //"FizzBuzz was not working, I fixed this by moving && condition to the top
+        console.log("FizzBuzz");
+     } else if (i % 5 === 0){
+        console.log("Buzz");
+     } else if (i % 3 === 0){
+       console.log("Fizz");
+     } else (console.log(i));
+     };
+
+
+
+
+
+
 
 
