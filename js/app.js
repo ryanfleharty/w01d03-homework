@@ -169,16 +169,24 @@ thomsCloset[2].unshift(kristynsShoe);
 // ### Dirty Laundry
 // Continue looking at the closet arrays:
 // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
-           ''' NO TIME NEED SLEEP'''
+           for (let i = 0; i < kristynsCloset.length; i++){
+               console.log("WHIRRR, Now washing item: " + kristynsCloset[i]);
+           };
+
 // ### Inventory
 // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
-            ''' NO TIME NEED SLEEP'''
+           for(let i = 0; i < thomsCloset.length; i++){
+           console.log(thomsCloset[0]);
+           console.log(thomsCloset[1]);
+           console.log(thomsCloset[2]);
+        };
+
 // <hr>
 // &#x1F534; The commit message should read: <br>
 // "Commit 8 - I loops through their closets".
 // <hr></hr>
 // ## Multiples of 3 and 5
-              ''' NO TIME NEED SLEEP'''
+              
 // _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
