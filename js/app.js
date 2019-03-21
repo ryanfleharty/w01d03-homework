@@ -24,7 +24,9 @@ for (i = 1; i <= 20; i++) {
 }
 
 
-//2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+//2. For every even number in your loop, log "...human...why you taking pictures
+// of me?...", "...the catnip made me do it...", or "...why does the red dot 
+//always get away..." at random.
 
 let catPhrase = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...'];
 
@@ -98,12 +100,15 @@ const reuben = ["Reuben", 22, "Durham"];
 const daniel = ["Daniel", 186, "Dallas"];
 const ryan = ["Ryan", 65, "Denver"];
 
-//1. Daniel decides that Shahzad can't be named "Shahzad" anymore. Remove "Shahzad" from the shahzad array and replace it with "Gameboy".
+//1. Daniel decides that Shahzad can't be named "Shahzad" anymore. Remove "Shahzad" 
+//from the shahzad array and replace it with "Gameboy".
 
 shahzad[0] = 'Gameboy';
-console.log(shahzad);
+//console.log(shahzad);
 
-//2. Daniel just had his birthday; change Daniel's array to reflect him being a year older. Don't just hard code 187--pretend that you don't know that his age is 186, and write your code to just make him a year older than whatever age he was.
+//2. Daniel just had his birthday; change Daniel's array to reflect him being a 
+//year older. Don't just hard code 187--pretend that you don't know that his age 
+//is 186, and write your code to just make him a year older than whatever age he was.
 //NOT WORKING...NEED TO FIX
 
 let age = daniel.splice(1, 1);
@@ -118,7 +123,9 @@ let newAge = age + 1;
 ryan[2] = 'Gotham City';
 //console.log(ryan);
 
-//4. Reuben left Durham 5 years ago to come to Chicago. Remove "Durham" from Reuben's array and add "Chicago". (Note: remove and then add is different from simply changing the value at that index.)
+//4. Reuben left Durham 5 years ago to come to Chicago. Remove "Durham" from 
+//Reuben's array and add "Chicago". (Note: remove and then add is different 
+//from simply changing the value at that index.)
 
 reuben.pop();
 //console.log(reuben);
@@ -133,19 +140,22 @@ reuben.splice(2, 1, 'Chicago')
 //console.log(reuben);
 
 
-//5. Jim could be literally anywhere in the world. Remove "All cities" from his array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine, but see if you can do it in one line of code
+//5. Jim could be literally anywhere in the world. Remove "All cities" from his 
+//array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine, but see if you can do it in one line of code
 
 jim.splice(2, 1, 'San Francisco', 'Santo Domingo', 'Santiago');
 //console.log(jim);
 
 
-//6. Bonus: Whoops! Jim is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim is now, remove it from the array using .splice()
+//6. Bonus: Whoops! Jim is actually only allowed to be in one of two cities. 
+//Whatever the first of the 3 cities for Jim is now, remove it from the array using .splice()
 //DO THIS????
 
 
 
 //Yell at the Ninja Turtles
-//1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+//1. Create an array with the members of the ninja turtles (Donatello, Leonardo, 
+//Raphael, Michaelangelo)
 
 let ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
@@ -156,9 +166,66 @@ for (i = 0; i < ninjaTurtles.length; i++) {
 //    console.log(ninjaTurtlesUp);
 }
 
-//3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+//3. Bonus: Modify the answer you just wrote. Instead of all letters being 
+//uppercase, make the letters alternate back and forth between uppercase and 
+//lowercase.
 //DO THIS????
 
+
+
+//Return of the Closets
+//Below, we've given you examples of Kristyn and Thom's closets modeled as data 
+//in JavaScript. Use this data to answer the following questions.
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+// Thom's closet is more complicated. Check out this nested data structure!!
+//Added descriptive array names to separate them...not sure if that breaks the rules.
+
+  const thomsCloset = [
+    {thomsShirts: [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ]}, {thomsPants: [
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ]}, {thomsAccessories: [
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]}
+  ];
+  
+//Alien Attire
+//1. Kristyn's left shoe has traveled through time and space and turned up in 
+//Thom's accessories drawer! Remove Kristyn's shoe from the array and save it 
+//to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe 
+//to Thom's accessories array.
+//NEED TO FIX!!!!!
+
+let krystynsShoe = kristynsCloset.splice(0, 1);
+console.log(krystynsShoe);
+
+let thomsNewCloset = thomsCloset.thomsAccessories.unshift(krystynsShoe);
+console.log(thomsNewCloset);
+
+//Dress 'em Up
+//1. Modify your code to put together 3 separate outfits for Kristyn and Thom. 
+//Put the output in a sentence to tell us what we'll be wearing. Mix and match!
 
 
 
