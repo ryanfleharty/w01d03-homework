@@ -151,3 +151,64 @@ for (let i = 3; i <= 1000; i++) {
   }
 }
 console.log(sum);
+
+//HUNGRY FOR MORE
+
+const leftIsosceles = function(height) {
+  var block = "#";
+  for (let i = 1; i <= height; i++) {
+    console.log(block.repeat(i));
+  }
+}
+
+const rightIsosceles = function(height) {
+  var block = "#";
+  var air = " "
+  for (let i = 1; i <= height; i++) {
+    console.log(air.repeat(height - i) + block.repeat(i));
+  }
+}
+
+const upsideDownLeftIsosceles = function(height) {
+  var block = "#";
+  for (let i = 0; i < height; i++) {
+    console.log(block.repeat(height - i));
+  }
+}
+
+const upsideDownRightIsosceles = function(height) {
+  var block = "#";
+  var air = " "
+  for (let i = 0; i < height; i++) {
+    console.log(air.repeat(i) + block.repeat(height - i));
+  }
+}
+
+leftIsosceles(10);
+rightIsosceles(10);
+upsideDownLeftIsosceles(10);
+upsideDownRightIsosceles(10);
+
+//FIND THE MEDIAN
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
+
+var median = function(array) {
+  let compareNumbers = function(a,b) {
+    return a - b; // My understanding of this is that it will tell the .sort method how to sort the numbers.
+  }
+  array.sort(compareNumbers); // without compareNumbers, .sort would just compare the first digit in each number.
+  let medianLocation = array[(array.length + 1)/2]
+  if (array.length % 2 === 0){
+  let medianValue = medianLocation
+  console.log(medianValue);
+} else {
+  let center = ((array.length + 1)/2);
+  let upper = center + 0.5;
+  let lower = center - 0.5;
+  let medianValue = (array[upper] + array[lower])/2;
+  console.log(medianValue);
+}
+}
+median(nums);
+
+//WELL...AT LEAST I TRIED
