@@ -132,6 +132,7 @@ const thomsCloset = [
 
 //Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 
+/**
 let kristynsShoe = kristynsCloset.slice(0,1);
 console.log(kristynsCloset);
 thomsCloset[2].push("left shoe");
@@ -155,3 +156,14 @@ let newOutif5 = thomsMessyCloset.slice(2,5);
 console.log(newOutif5);
 let newOutfit6 = thomsMessyCloset.slice(4,6 + 1);
 console.log(newOutfit6);
+**/
+
+//Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+for (var i = 0; i < kristynsCloset.length; i++) {
+  console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+//Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+
+console.log(thomsCloset[0]);
+console.log(thomsCloset[1]);
