@@ -1,52 +1,51 @@
 console.log('Up and running');
 
-// // Easy Going
-// // 1. Write a for loop that will log the numbers 1 through 20.
-// // for (let i = 1; i <= 20; i += 1) {
-// //   console.log(i);
-// // }
+// Easy Going
+// 1. Write a for loop that will log the numbers 1 through 20.
+for (let i = 1; i <= 20; i += 1) {
+  console.log(i);
+}
 
-// // Get Even
-// // 1. Write a for loop that will log only the even numbers in 0 through 200.
-// for (let i = 0; i <= 200; i += 2) {
-//   console.log(i);
-// }
+// Get Even
+// 1. Write a for loop that will log only the even numbers in 0 through 200.
+for (let i = 0; i <= 200; i += 2) {
+  console.log(i);
+}
 
-// // Excited Kitten
-// // 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
-// for (let i = 0; i < 20; i++) {
-//   console.log('Love me, pet me! HSSSSSS!');
-// }
+// Excited Kitten
+// 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+for (let i = 0; i < 20; i++) {
+  console.log('Love me, pet me! HSSSSSS!');
+}
 
-// // 2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
-// //Fisher-Yates Shuffle algorithm recreated from StackExchange
-// function shuffle(arr) {
-//   let ctr = arr.length;
-//   let temp, i;
+// 2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+//Fisher-Yates Shuffle algorithm recreated from StackExchange
+function shuffle(arr) {
+  let ctr = arr.length;
+  let temp, i;
 
-//   while (ctr > 0) {
-//     //randomize
-//     i = Math.floor(Math.random() * ctr);
+  while (ctr > 0) {
+    //randomize
+    i = Math.floor(Math.random() * ctr);
 
-//     //decrement counter because arrays begin at element[0].
-//     ctr--;
+    //decrement counter because arrays begin at element[0].
+    ctr--;
 
-//     //perform the swap
-//     temp = arr[ctr];
-//     arr[ctr] = arr[i];
-//     arr[i] = temp;
-//   }
-//   return arr;
-// }
+    //perform the swap
+    temp = arr[ctr];
+    arr[ctr] = arr[i];
+    arr[i] = temp;
+  }
+  return arr;
+}
 
-// for (let i = 0; i < 20; i++) {
-//   if (i % 2 === 0) {
-//     console.log(i);
-
-//     let catStrings = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...'];
-//     console.log(shuffle(catStrings)[0]);
-//   }
-// }
+for (let i = 0; i < 20; i++) {
+  if (i % 2 === 0) {
+    //console.log(i);
+    let catStrings = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...'];
+    console.log(shuffle(catStrings)[0]);
+  }
+}
 
 // Fizz Buzz
 // NOTE: THIS IS A CLASSIC RITE-OF-PASSAGE FOR JAVASCRIPT PROGRAMMERS, ESPECIALLY ONES AT GA
@@ -54,7 +53,7 @@ console.log('Up and running');
 // 2. If a number is divisible by 3 log "Fizz" instead of the number.
 // 3. If a number is divisible by 5 log "Buzz" instead of the number.
 // 4. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
-const max = 100;
+let max = 100;
 for (let i = 0; i < max; i += 1) {
   if ((i % 3 === 0) && (i % 5 === 0)) {
     result = 'fizzbuzz';
@@ -126,7 +125,6 @@ for (let i = 0; i < turtlesArr.length; i++) {
 
 // Return of the Closets
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
-
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -160,7 +158,7 @@ const thomsCloset = [
 
 // Alien Attire
 // 1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
-const kristynsShoe = kristynsCloset.slice(0, 1);
+const kristynsShoe = kristynsCloset[0];
 thomsCloset[2].push(kristynsShoe);
 console.log(thomsCloset[2][3]);
 
@@ -200,10 +198,21 @@ console.table(thomsClosetAccessories);
 
 // Multiples of 3 and 5
 // Yes, you might have tackled this earlier, but try it again (don't look back at your other code 👀)
-
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-
 // Find the sum of all the multiples of 3 or 5 below 1000.
+max = 1000;
+let sum = 0;
+for (let i = 0; i < max; i += 1) {
+  if ((i % 3 === 0) && (i % 5 === 0)) {
+    sum += i;
+  } else if (i % 3 === 0) {
+    sum += i;
+  } else if (i % 5 === 0) {
+    sum += i;
+  }   
+}
+console.log(sum);
+
 
 
 
