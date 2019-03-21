@@ -128,6 +128,14 @@ log the sentence "WHIRR: Now washing (item)" for each item in the array.
 Inventory
 Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 */
-for(let i = 0;i<thomsCloset.length;i++){
-for(let x = 0; x<thomsCloset.length;x++)
-console.log(thomsCloset[i][x])}
+//for(let i = 0;i<thomsCloset.length;i++){
+//for(let x = 0; x<thomsCloset.length;x++)
+//console.log(thomsCloset[i][x])}
+
+//Multiples of 3 and 5
+const sum = []
+for(let i = 1;i<=1000;i++){
+if (i % 5 === 0 || i % 3 === 0){
+    sum.push([i])}}
+for(let x = 0;x<sum.length;x++){
+   console.log([x]+sum[x])}
