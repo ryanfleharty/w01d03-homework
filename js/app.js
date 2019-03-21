@@ -112,8 +112,8 @@ Dress 'em Up
 Modify your code to put together 3 separate outfits for Kristyn and Thom. 
 Put the output in a sentence to tell us what we'll be wearing. Mix and match!
 */
-console.log("Kristyn will be wearing "+kristynsCloset[4]+" and "+kristynsCloset[1]+" and "+kristynsCloset[3]);
-console.log("Thom will wear a "+thomsCloset[0][1]+" and "+thomsCloset[1][0]+" with a "+thomsCloset[2][1]);
+//console.log("Kristyn will be wearing "+kristynsCloset[4]+" and "+kristynsCloset[1]+" and "+kristynsCloset[3]);
+//console.log("Thom will wear a "+thomsCloset[0][1]+" and "+thomsCloset[1][0]+" with a "+thomsCloset[2][1]);
 
 /*
 Dirty Laundry
@@ -122,9 +122,12 @@ Continue looking at the closet arrays:
 Time to do laundry - loop through Kristyn's closet and 
 log the sentence "WHIRR: Now washing (item)" for each item in the array.
 */
-
-
+//for(let i = 0;i<kristynsCloset.length;i++)
+//console.log("WHIRR: Now washing "+ kristynsCloset[i])
 /*
 Inventory
 Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 */
+for(let i = 0;i<thomsCloset.length;i++){
+for(let x = 0; x<thomsCloset.length;x++)
+console.log(thomsCloset[i][x])}
