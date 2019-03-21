@@ -159,6 +159,7 @@ console.log(newOutfit6);
 **/
 
 //Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+/**
 for (var i = 0; i < kristynsCloset.length; i++) {
   console.log("WHIRR: Now washing " + kristynsCloset[i]);
 }
@@ -167,3 +168,14 @@ for (var i = 0; i < kristynsCloset.length; i++) {
 
 console.log(thomsCloset[0]);
 console.log(thomsCloset[1]);
+**/
+
+//Find the **sum** of all the multiples of 3 or 5 below 1000.
+
+for (var i = 0; i < 1000; i++) {
+  if(i % 5 === 0) {
+    console.log(i);
+  } else if (i % 3 === 0) {
+    console.log(i);
+  }
+  }
