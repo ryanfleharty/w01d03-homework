@@ -218,14 +218,34 @@ const kristynsCloset = [
 //NEED TO FIX!!!!!
 
 let krystynsShoe = kristynsCloset.splice(0, 1);
-console.log(krystynsShoe);
+//console.log(krystynsShoe);
 
-let thomsNewCloset = thomsCloset.thomsAccessories.unshift(krystynsShoe);
-console.log(thomsNewCloset);
+//let thomsNewCloset = thomsCloset.thomsAccessories.unshift(krystynsShoe);
+//console.log(thomsNewCloset);
 
 //Dress 'em Up
 //1. Modify your code to put together 3 separate outfits for Kristyn and Thom. 
 //Put the output in a sentence to tell us what we'll be wearing. Mix and match!
 
 
+
+
+//Dirty Laundry
+//1. Time to do laundry - loop through Kristyn's closet and log the sentence 
+//"WHIRR: Now washing (item)" for each item in the array.
+
+
+for (let i = 0; i < kristynsCloset.length; i++) {
+	console.log('WHIRR: Now washing ' + kristynsCloset[i]);
+}
+
+
+
+//Inventory
+//2. Thom wants to do inventory on his closet. Using bracket notation, log the 
+//arrays (not the elements in the arrays) containing all of Thom's shirts, 
+//pants, and accessories.
+
+let thomsClosetInventory = thomsCloset.splice(0, 3);
+console.log(thomsClosetInventory);
 
