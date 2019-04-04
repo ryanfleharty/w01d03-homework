@@ -151,139 +151,145 @@ const thomsCloset = [
     "raybans"
   ]
 ];
-```
-
-### Alien Attire
-1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable `kristynsShoe`. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
-
-### Dress 'em Up
-1. Modify your code to put together **3 separate outfits** for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
-
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
-<hr>
-
-### Dirty Laundry
-Continue looking at the closet arrays:
-1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
-
-### Inventory
-2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
-
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 8 - I loops through their closets".
-<hr>
-
-## Multiples of 3 and 5
-
-_Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
-
-If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-
-Find the **sum** of all the multiples of 3 or 5 below 1000.
-
-:clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
-
->Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
-
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 9 - Project Euler Problem 1 answered"
-<hr>
-
----
 
 
-# Hungry for more?
+// <!-- ### Alien Attire
+// 1. Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable `kristynsShoe`. Use that variable to add Kristyn's lost shoe to Thom's accessories array. -->
 
-## Triangles
-
-0. declare a variable `argument` and set it equal to 7.
-
-1. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
-
->Ex: `argument` is 7
-
-```
-#
-##
-###
-####
-#####
-######
-#######
-```
-
-2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
-
->Ex: `argument` is 7
-
-```
-      #
-     ##
-    ###
-   ####
-  #####
- ######
-#######
-```
+ kristynsShoe = "left shoe";
+ kristynsCloset.pop();
+ kristynsCloset.
 
 
-3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
 
->Ex: `argument` is 7
+// <!-- ### Dress 'em Up
+// 1. Modify your code to put together **3 separate outfits** for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
 
-```
-#######
-######
-#####
-####
-###
-##
-#
-```
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
+// <hr>
 
-4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
+// ### Dirty Laundry
+// Continue looking at the closet arrays:
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 
->Ex: `argument` is 7
+// ### Inventory
+// 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 
-```
-#######
- ######
-  #####
-   ####
-    ###
-     ##
-      #
-```
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 8 - I loops through their closets".
+// <hr>
 
-5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
+// ## Multiples of 3 and 5
 
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 10 - Triangles answered"
-<hr>
+// _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
 
-## Find the Median
-- Find the median number in the following `nums` array, then console.log that number.
-- _hint_ this will likely involve breaking down the problem into a few steps
--  _hint_: Click "Details" below (don't read this unless you've been stuck for a while) 
-<details>
-if you check the length of the array / 2, you might get not get a whole number. In which case, look into `Math.floor( // something )`
-</details>
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-```javascript
-const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+// Find the **sum** of all the multiples of 3 or 5 below 1000.
 
-Expected output:
-=> 15
-```
+// :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
 
-<hr>
-&#x1F534; The commit message should read: <br>
-"Commit 11 - Find the Median answered"
-<hr>
+// >Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
 
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 9 - Project Euler Problem 1 answered"
+// <hr>
+
+// ---
+
+
+// # Hungry for more?
+
+// ## Triangles
+
+// 0. declare a variable `argument` and set it equal to 7.
+
+// 1. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
+
+// >Ex: `argument` is 7
+
+// ```
+// #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######
+// ```
+
+// 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
+
+// >Ex: `argument` is 7
+
+// ```
+//       #
+//      ##
+//     ###
+//    ####
+//   #####
+//  ######
+// #######
+// ```
+
+
+// 3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
+
+// >Ex: `argument` is 7
+
+// ```
+// #######
+// ######
+// #####
+// ####
+// ###
+// ##
+// #
+// ```
+
+// 4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
+
+// >Ex: `argument` is 7
+
+// ```
+// #######
+//  ######
+//   #####
+//    ####
+//     ###
+//      ##
+//       #
+// ```
+
+// 5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
+
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 10 - Triangles answered"
+// <hr>
+
+// ## Find the Median
+// - Find the median number in the following `nums` array, then console.log that number.
+// - _hint_ this will likely involve breaking down the problem into a few steps
+// -  _hint_: Click "Details" below (don't read this unless you've been stuck for a while) 
+// <details>
+// if you check the length of the array / 2, you might get not get a whole number. In which case, look into `Math.floor( // something )`
+// </details>
+
+// ```javascript
+// const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+
+// Expected output:
+// => 15
+// ```
+
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 11 - Find the Median answered"
+// <hr>
+//  -->
 

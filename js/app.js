@@ -75,8 +75,8 @@ for (let i = 0; i <= 100; i++){
 
 //      2. Daniel just had his birthday; change Daniel's array to reflect him being a year older.  Don't just hard code `187`--pretend that you don't know that his age is 186, and write your code to just make him a year older than whatever age he was.
      
-    let bDay = 187; 
-    daniel[1]= bDay;
+    //let bDay = 187; 
+    daniel[1]= 187;
 
 //      3. Ryan is Batman maybe.  Or possibly Robin. Change Ryan's hometown from "Denver" to "Gotham City".
      
@@ -84,7 +84,7 @@ for (let i = 0; i <= 100; i++){
 
 //      4. Reuben left Durham 5 years ago to come to Chicago. Remove "Durham" from Reuben's array and add "Chicago". (Note: remove and then add is different from simply changing the value at that index.)
      
-     reuben.splice(2,3, "Chicago"); //array.splice(index, howmany, item1, ....., itemX)
+     reuben.splice(2,3, "Chicago",); //array.splice(index, howmany, item1, ....., itemX)
 
 //      5. Jim could be literally anywhere in the world. Remove "All cities" from his array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine, but [see if you can do it in one line of code](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
      
@@ -189,7 +189,19 @@ thomsCloset[2].unshift(kristynsShoe);
               
 // _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
 
-// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.co
+
+let nums = 0;
+
+
+for (let i =3; i < 1000; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {
+    nums = nums + i;
+  }
+}
+
+console.log(nums);
+
 
 // Find the **sum** of all the multiples of 3 or 5 below 1000.
 
@@ -201,3 +213,16 @@ thomsCloset[2].unshift(kristynsShoe);
 // &#x1F534; The commit message should read: <br>
 // "Commit 9 - Project Euler Problem 1 answered"
 // <hr>
+
+
+// var str = "silly";
+// var arr = [];
+// for(let i = 0; i < str.length; i++){
+//     console.log(str[i]);
+//     arr.push(str[i]);
+//     for(let i = 0; arr.length; i++){
+//         if(arr[i] === arr[0]);
+//     }
+// }
+
+// console.log(arr);
